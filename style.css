@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-color: #000000;
+}
+
+.rocketcard-background {
+  background-color: aqua;
+
+  padding: 30px 20px;
+
+  border-radius: 15px;
+}
+
+.rocketcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  position: relative;
+
+  width: 438px;
+  height: 693px;
+
+  padding: 30px 25px;
+
+  border-radius: 15px;
+
+  background-color: #0E1218;
+
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.card-header p {
+  font-family: "Prompt", sans-serif;
+  font-size: 24px;
+
+  color: #F1F1F1;
+}
+
+.logo-container {
+  display: flex;
+
+  border: 2px solid #F1F1F1;
+
+  padding: 9px 14px;
+
+  border-radius: 100%;
+}
+
+.logo-container img {
+  width: 30px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  position: absolute;
+
+  transform: translate(50px, 100px);
+
+  background: linear-gradient(77deg, rgba(119,72,226,1) 0%, rgba(94,19,152,1) 72%);
+
+  width: 450px;
+  height: 450px;
+
+  border: 10px solid #8257e5;
+  border-radius: 100%;
+
+  z-index: 0
+}
+
+.avatar {
+  width: 430px;
+}
+
+.stats-container {
+  background: transparent;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(84,80,80,0.7) 70%);
+
+  display: flex;
+  justify-content: center;
+
+  transform: translate(0px, 130px);
+
+  width: 210px;
+  height: 210px;
+
+  border-radius: 50px;
+
+  z-index: 1;
+}
+
+.stats-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.stats img {
+  width: 20px;
+}
+
+.stats p {
+  font-family: "Prompt", sans-serif;
+
+  color: #F1F1F1;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+
+  width: 210px;
+
+  margin-left: auto;
+
+  gap: 15px;
+}
+
+.card-footer img {
+  width: 35px;
+}
+
+.card-footer p {
+  font-family: "Prompt", sans-serif;
+  font-size: 24px;
+
+  text-transform: uppercase;
+
+  color: #F1F1F1
+}
